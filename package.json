@@ -1,0 +1,12 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^24.1.0",
+    "shadow-cljs": "^2.28.9",
+    "vitest": "^1.6.0"
+  },
+  "scripts": {
+    "shadow": "shadow-cljs watch test",
+    "vitest": "vitest"
+  }
+}

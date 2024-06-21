@@ -1,0 +1,5 @@
+{:deps true
+ :builds {:test {:target :esm
+                 :output-dir "target/test"
+                 :js-options {:js-provider :import}
+                 :modules {:main {:exports {default pitch.main-test/main}}}}}}
