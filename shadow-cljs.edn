@@ -1,5 +1,5 @@
 {:deps true
- :builds {:test {:target :esm
+ :builds {:test {:target :esm-files
                  :output-dir "target/test"
                  :js-options {:js-provider :import}
-                 :modules {:main {:exports {default pitch.main-test/main}}}}}}
+                 :ns-regexp "test$"}}}
