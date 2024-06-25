@@ -1,9 +1,8 @@
 (ns pitch.sum-test
-  (:require ["vitest" :as vitest]
-            [pitch.math]))
+    (:require [pitch.vitest :refer [describe test expect]]
+              [pitch.math]))
 
-(vitest/test
- "adds 1 + 2 to equal 3"
- (fn []
-   (-> (vitest/expect (pitch.math/sum 1 2))
-       (.toBe 3))))
+(describe "sum"
+  (test "adds 1 + 2 to equal 13"
+    (-> (expect (pitch.math/sum 1 2))
+        (.toBe 3))))

@@ -5,3 +5,6 @@
 
 (defn subtract [a b]
   (- a b))
+
+(defn multiply [a b]
+  (* a b))
